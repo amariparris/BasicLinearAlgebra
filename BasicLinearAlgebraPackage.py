@@ -23,6 +23,7 @@ class BasicLinAlg:
     """
     
     eps = 1e-10 
+
     @staticmethod
     def scalar_multiply_vector(vector, scalar):
         """
@@ -243,7 +244,6 @@ class BasicLinAlg:
         inv = BasicLinAlg.scalar_multiply(ad_matrix, (1/deter))
         return inv 
 
-
     @staticmethod
     def adjoint(matrix):
         """
@@ -294,7 +294,8 @@ class BasicLinAlg:
         list of list of float/int -- The scalar product of the matrix.
         """
 
-        return [[scalar * entry for entry in row] for row in matrix]
+        result = [[scalar * entry for entry in row] for row in matrix] 
+        return result
 
     @staticmethod
     def matrix_addition(m1, m2):
@@ -490,6 +491,7 @@ class BasicLinAlg:
         for times in range(1,power):
             # multiply matrix time itself
             matrix_power = BasicLinAlg.matrix_multiply(matrix, matrix_power)
+
         return matrix_power
 
     @staticmethod

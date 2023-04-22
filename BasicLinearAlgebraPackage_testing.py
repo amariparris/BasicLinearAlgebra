@@ -64,7 +64,6 @@ class TestBasicLinAlg(unittest.TestCase):
         expected_result = 4.55521678957215
         self.assertAlmostEqual(BasicLinAlg.vector_norm(vector), expected_result)
 
-
     def test_dot_product(self):
         """
         Method -- test_dot_product
@@ -201,7 +200,6 @@ class TestBasicLinAlg(unittest.TestCase):
         matrix = []
         with self.assertRaises(ValueError):
             BasicLinAlg.inverse(matrix)
-
     
     def test_determinant(self):
         """
@@ -264,7 +262,6 @@ class TestBasicLinAlg(unittest.TestCase):
         matrix = [[2, 3, 7], [5, 6, 8]]
         with self.assertRaises(ValueError):
             BasicLinAlg.adjoint(matrix)
-
     
     def test_scalar_multiply(self):
         """
@@ -342,7 +339,6 @@ class TestBasicLinAlg(unittest.TestCase):
         m2 = [[4, -5, 6],[-2,4,-6]]
         expected_result = [[3, -3, 3],[-2,0,1]]
         self.assertEqual(BasicLinAlg.matrix_addition(m1, m2), expected_result)
-
     
     def test_matrix_subtraction(self):
         """
@@ -378,7 +374,6 @@ class TestBasicLinAlg(unittest.TestCase):
         m2 = [[4, -5, 6],[-2,4,-6]]
         expected_result = [[-5, 7, -9],[2,-8,13]]
         self.assertEqual(BasicLinAlg.matrix_subtraction(m1, m2), expected_result)
-
 
     def test_matrix_multiply(self):
         """
@@ -430,7 +425,6 @@ class TestBasicLinAlg(unittest.TestCase):
         m2 = [[4.5, 5.5],[7.7, 3.2]]
         expected = [[26.0, 16.25], [22.87, 21.12]]
         self.assertAlmostEqual(BasicLinAlg.matrix_multiply(m1,m2), expected)
-
     
     def test_matrix_power(self):
         """
