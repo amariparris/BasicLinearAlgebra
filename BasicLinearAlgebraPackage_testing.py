@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from group_project_shell import BasicLinAlg
+from BasicLinearAlgebraPackage import BasicLinAlg
 
 class TestBasicLinAlg(unittest.TestCase):
     """
