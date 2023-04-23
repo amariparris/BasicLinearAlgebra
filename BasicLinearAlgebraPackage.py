@@ -1,4 +1,5 @@
 import numpy as np
+
 class BasicLinAlg:
     """
     This class is a collection of static methods for performing various operations on arrays and matrices.

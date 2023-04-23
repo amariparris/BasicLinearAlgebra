@@ -8,4 +8,5 @@ Example:
     import BasicLinearAlgebraPackage as bl
     lin_alg = bl.BasicLinAlg()
 """
+
 from .BasicLinearAlgebraPackage import BasicLinAlg
